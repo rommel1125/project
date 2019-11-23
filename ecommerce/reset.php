@@ -6,7 +6,6 @@
 
 	if(isset($_POST['reset'])){
 		$email = $_POST['email'];
-
 		$conn = $pdo->open();
 
 		$stmt = $conn->prepare("SELECT *, COUNT(*) AS numrows FROM users WHERE email=:email");
