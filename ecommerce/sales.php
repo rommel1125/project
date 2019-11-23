@@ -4,7 +4,6 @@
 	if(isset($_GET['pay'])){
 		$payid = $_GET['pay'];
 		$date = date('Y-m-d');
-
 		$conn = $pdo->open();
 
 		try{
