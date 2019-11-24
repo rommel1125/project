@@ -73,12 +73,12 @@
 
                 echo "<h3>&#36; ".number_format_short($total, 2)."</h3>";
               ?>
-              <p>Total Sales</p>
+              <p style="color:black">Total Sales</p>
             </div>
             <div class="icon">
               <i class="fa fa-shopping-cart"></i>
             </div>
-            <a href="book.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--book.php--><a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -94,12 +94,12 @@
                 echo "<h3>".$prow['numrows']."</h3>";
               ?>
           
-              <p>Number of Products</p>
+              <p style="color:black">Number of Products</p>
             </div>
             <div class="icon">
               <i class="fa fa-barcode"></i>
             </div>
-            <a href="student.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--student.php--><a href="products.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -115,12 +115,12 @@
                 echo "<h3>".$urow['numrows']."</h3>";
               ?>
              
-              <p>Number of Users</p>
+              <p style="color:black">Number of Users</p>
             </div>
             <div class="icon">
               <i class="fa fa-users"></i>
             </div>
-            <a href="return.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--return.php--><a href="users.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -142,12 +142,12 @@
                 
               ?>
 
-              <p>Sales Today</p>
+              <p style="color:black">Sales Today</p>
             </div>
             <div class="icon">
               <i class="fa fa-money"></i>
             </div>
-            <a href="borrow.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
