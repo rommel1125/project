@@ -60,12 +60,12 @@
 
 					$message = "
 						<h2>Thank you for Registering.</h2>
-						<p>Your Account:</p>
+						<p>Your Account</p>
 						<p>Email: ".$email."</p>
 						<p>Password: ".$_POST['password']."</p>
 						<p>Please click the link below to activate your account.</p>
-						<a href='http://localhost/ecommerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
-					";
+						<a href='http://localhost/projectWEB/ecommerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
+					";//code=".$code."&user=".$userid."'
 
 					//Load phpmailer
 		    		require 'vendor/autoload.php';
@@ -73,11 +73,11 @@
 		    		$mail = new PHPMailer(true);                             
 				    try {
 				        //Server settings
-				        $mail->isSMTP();                                     
-				        $mail->Host = 'smtp.gmail.com';                      
-				        $mail->SMTPAuth = true;                               
-				        $mail->Username = 'testsourcecodester@gmail.com';     
-				        $mail->Password = 'mysourcepass';                    
+				        $mail->isSMTP();                                   
+				        $mail->Host = "smtp.gmail.com";                      
+				        $mail->SMTPAuth = true;           
+				        $mail->Username = "frogoso.rommel@gmail.com";     
+				        $mail->Password = "f r h l w u t s e b d g a l o u";                 
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
 				            'verify_peer' => false,
@@ -85,19 +85,19 @@
 				            'allow_self_signed' => true
 				            )
 				        );                         
-				        $mail->SMTPSecure = 'ssl';                           
-				        $mail->Port = 465;                                   
+				        $mail->SMTPSecure = "tls";                           
+				        $mail->Port = 587;                                   
 
-				        $mail->setFrom('testsourcecodester@gmail.com');
+				        $mail->setFrom("frogoso.rommel@gmail.com");
 				        
 				        //Recipients
 				        $mail->addAddress($email);              
-				        $mail->addReplyTo('testsourcecodester@gmail.com');
+				        $mail->addReplyTo("frogoso.rommel@gmail.com");
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
-				        $mail->Subject = 'ECommerce Site Sign Up';
-				        $mail->Body    = $message;
+				        $mail->Subject = "E-TECH Sign Up";
+				        $mail->Body = $message;
 
 				        $mail->send();
 
@@ -105,10 +105,10 @@
 				        unset($_SESSION['lastname']);
 				        unset($_SESSION['email']);
 
-				        $_SESSION['success'] = 'Account created. Check your email to activate.';
+				        $_SESSION['success'] = "Account created. Check your email to activate.";
 				        header('location: signup.php');
 
-				    } 
+				    }
 				    catch (Exception $e) {
 				        $_SESSION['error'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
 				        header('location: signup.php');

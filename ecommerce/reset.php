@@ -25,7 +25,7 @@
 					<p>Your Account:</p>
 					<p>Email: ".$email."</p>
 					<p>Please click the link below to reset your password.</p>
-					<a href='http://localhost/ecommerce/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
+					<a href='http://localhost/projectWEB/ecommerce/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
 				";
 
 				//Load phpmailer
@@ -36,8 +36,8 @@
 			        $mail->isSMTP();                                     
 			        $mail->Host = 'smtp.gmail.com';                      
 			        $mail->SMTPAuth = true;                               
-			        $mail->Username = 'testsourcecodester@gmail.com';     
-			        $mail->Password = 'mysourcepass';                    
+			        $mail->Username = 'frogoso.rommel@gmail.com';     
+			        $mail->Password = 'f r h l w u t s e b d g a l o u';                    
 			        $mail->SMTPOptions = array(
 			            'ssl' => array(
 			            'verify_peer' => false,
@@ -45,23 +45,23 @@
 			            'allow_self_signed' => true
 			            )
 			        );                         
-			        $mail->SMTPSecure = 'ssl';                           
-			        $mail->Port = 465;                                   
+			        $mail->SMTPSecure = 'tls';                           
+			        $mail->Port = 587;                                   
 
-			        $mail->setFrom('testsourcecodester@gmail.com');
+			        $mail->setFrom('frogoso.rommel@gmail.com');
 			        
 			        //Recipients
 			        $mail->addAddress($email);              
-			        $mail->addReplyTo('testsourcecodester@gmail.com');
+			        $mail->addReplyTo('frogoso.rommel@gmail.com');
 			       
 			        //Content
 			        $mail->isHTML(true);                                  
-			        $mail->Subject = 'ECommerce Site Password Reset';
+			        $mail->Subject = 'E-TECH Password Reset';
 			        $mail->Body    = $message;
 
 			        $mail->send();
 
-			        $_SESSION['success'] = 'Password reset link sent';
+			        $_SESSION['success'] = 'Password reset link sent to your email';
 			     
 			    } 
 			    catch (Exception $e) {

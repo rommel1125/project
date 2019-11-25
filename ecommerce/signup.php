@@ -36,7 +36,7 @@
       }
     ?>
   	<div class="register-box-body">
-    	<p class="login-box-msg">Register a new membership</p>
+    	<p class="login-box-msg" style="color: black">Register a new membership</p>
 
     	<form action="register.php" method="POST">
           <div class="form-group has-feedback">
