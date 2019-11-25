@@ -17,6 +17,10 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">CATEGORY <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
+            <!-- <li>
+            <a href='category.php?category=' id='asd'>All</a>
+            </li> -->
+
               <?php
              
                 $conn = $pdo->open();
@@ -25,8 +29,10 @@
                   $stmt->execute();
                   foreach($stmt as $row){
                     echo "
-                      <li><a href='category.php?category=".$row['cat_slug']."'>".$row['name']."</a></li>
-                    ";                  
+                      <li>
+                      <a href='category.php?category=".$row['id']."'>".$row['name']."</a>
+                      </li>
+                    ";   
                   }
                 }
                 catch(PDOException $e){
