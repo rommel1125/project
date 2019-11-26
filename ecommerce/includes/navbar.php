@@ -2,7 +2,7 @@
   <nav class="navbar navbar-static-top"  style="background-color:lightblue">
     <div class="container">
       <div class="navbar-header">
-        <a href="index.php" class="navbar-brand" style="color:black"><b>E-</b>TECH</a>
+        <a href="index.php" class="navbar-brand"><img src="images/ecomLOGO.png" style="margin-top: -8px"></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
