@@ -1,10 +1,10 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="#" class="logo">
+  <a href="#" class="logo" style="background-color:lightblue">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>E-</b>T</span>
+    <span class="logo-mini" style="color:black"><img src="http://localhost/projectWEB/ecommerce/images/soloLOGO.png"></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>E-</b>TECH</span>
+    <span class="logo-lg"><img src="http://localhost/projectWEB/ecommerce/images/ecomLOGO.png"></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top" style="background-color:lightblue">
@@ -19,7 +19,7 @@
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <img src="<?php echo (!empty($admin['photo'])) ? '../images/'.$admin['photo'] : '../images/profile.jpg'; ?>" class="user-image" alt="User Image">
-            <span class="hidden-xs" style="color:black"><?php echo $admin['firstname'].' '.$admin['lastname']; ?></span>
+            <span class="hidden-xs" style="color:#1c2643"><?php echo $admin['firstname'].' '.$admin['lastname']; ?></span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->

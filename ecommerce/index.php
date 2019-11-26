@@ -88,8 +88,9 @@
 							echo "There is some problem in connection: " . $e->getMessage();
 						}
 						$pdo->close();
+						
+		       		?>
 
-		       		?> 
 	        	</div>
 	        	<div class="col-sm-3">
 	        		<?php include 'includes/sidebar.php'; ?>

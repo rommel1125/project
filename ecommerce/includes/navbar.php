@@ -11,11 +11,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.php" style="color:black">HOME</a></li>
-          <li><a href="" style="color:black">ABOUT US</a></li>
-          <li><a href="" style="color:black">CONTACT US</a></li>
+          <li><a href="index.php" style="color:#1c2744"><b>HOME</b></a></li>
+          <li><a href="" style="color:#1c2744"><b>ABOUT US</b></a></li>
+          <li><a href="" style="color:#1c2744"><b>CONTACT US</b></a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">CATEGORY <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#1c2744"><b>CATEGORY</b> <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
             <!-- <li>
             <a href='category.php?category=' id='asd'>All</a>
@@ -61,7 +61,7 @@
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-shopping-cart"></i>
+              <i class="fa fa-shopping-cart" style="color:#1c2744"></i>
               <span class="label label-success cart_count"></span>
             </a>
             <ul class="dropdown-menu">
@@ -106,8 +106,8 @@
             }
             else{
               echo "
-                <li><a href='login.php'>LOGIN</a></li>
-                <li><a href='signup.php'>SIGNUP</a></li>
+                <li><a href='login.php' style='color:#1c2744'><b>LOGIN</b></a></li>
+                <li><a href='signup.php' style='color:#1c2744'><b>SIGNUP</b></a></li>
               ";
             }
           ?>

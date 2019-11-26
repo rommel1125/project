@@ -23,11 +23,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
+        <b style="color:#1c2643">Dashboard</b>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
+        <li><a href="#"><i class="fa fa-dashboard" style="color:#1c2744"></i> Home</a></li>
+        <li class="active" style="color:#1c2744">Dashboard</li>
       </ol>
     </section>
 
@@ -73,12 +73,12 @@
 
                 echo "<h3>&#36; ".number_format_short($total, 2)."</h3>";
               ?>
-              <p style="color:black">Total Sales</p>
+              <p style="color:#1c2744">Total Sales</p>
             </div>
             <div class="icon">
               <i class="fa fa-shopping-cart"></i>
             </div>
-<!--book.php--><a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--book.php--><a href="" class="small-box-footer" style="color:#1c2744">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -94,12 +94,12 @@
                 echo "<h3>".$prow['numrows']."</h3>";
               ?>
           
-              <p style="color:black">Number of Products</p>
+              <p style="color:#1c2744">Number of Products</p>
             </div>
             <div class="icon">
               <i class="fa fa-barcode"></i>
             </div>
-<!--student.php--><a href="products.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--student.php--><a href="products.php" class="small-box-footer" style="color:#1c2744">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -115,12 +115,12 @@
                 echo "<h3>".$urow['numrows']."</h3>";
               ?>
              
-              <p style="color:black">Number of Users</p>
+              <p style="color:#1c2744">Number of Users</p>
             </div>
             <div class="icon">
               <i class="fa fa-users"></i>
             </div>
-<!--return.php--><a href="users.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+<!--return.php--><a href="users.php" class="small-box-footer" style="color:#1c2744">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -142,12 +142,12 @@
                 
               ?>
 
-              <p style="color:black">Sales Today</p>
+              <p style="color:#1c2744">Sales Today</p>
             </div>
             <div class="icon">
               <i class="fa fa-money"></i>
             </div>
-            <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="" class="small-box-footer" style="color:#1c2744">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
