@@ -36,6 +36,7 @@
       }
     ?>
   	<div class="register-box-body">
+    <img src="images/ecomLOGO.png"><br><br>
     	<p class="login-box-msg" style="color: black">Register a new membership</p>
 
     	<form action="register.php" method="POST">
@@ -69,18 +70,13 @@
             }
           ?>
           <hr>
-      		<div class="row">
-    			<div class="col-xs-4">
           			<button type="submit" class="btn btn-primary btn-block btn-flat" name="signup"><i class="fa fa-pencil"></i> Sign Up</button>
-        		</div>
-      		</div>
     	</form>
       <br>
       <a href="login.php">I already have a membership</a><br>
       <a href="index.php"><i class="fa fa-home"></i> Home</a>
   	</div>
 </div>
-	
 <?php include 'includes/scripts.php' ?>
 </body>
 </html>

@@ -76,8 +76,8 @@
 				        $mail->isSMTP();                                   
 				        $mail->Host = "smtp.gmail.com";                      
 				        $mail->SMTPAuth = true;           
-				        $mail->Username = "frogoso.rommel@gmail.com";     
-				        $mail->Password = "f r h l w u t s e b d g a l o u";                 
+				        $mail->Username = "rommelfrogoso.rjf11@gmail.com";     
+				        $mail->Password = "foucxtuznsuqyrmj";                 
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
 				            'verify_peer' => false,
@@ -88,11 +88,11 @@
 				        $mail->SMTPSecure = "tls";                           
 				        $mail->Port = 587;                                   
 
-				        $mail->setFrom("frogoso.rommel@gmail.com");
+				        $mail->setFrom("rommelfrogoso.rjf11@gmail.com");
 				        
 				        //Recipients
 				        $mail->addAddress($email);              
-				        $mail->addReplyTo("frogoso.rommel@gmail.com");
+				        $mail->addReplyTo("rommelfrogoso.rjf11@gmail.com");
 				       
 				        //Content
 				        $mail->isHTML(true);                                  

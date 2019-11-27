@@ -90,7 +90,9 @@
 						$pdo->close();
 						
 		       		?>
-					<h2>All Products</h2>
+
+<!-- All products Starts here	-->				
+			<!-- <h2>All Products</h2>
 					<?php
 						$conn = $pdo->open();
 						try{
@@ -124,7 +126,7 @@
 					}
 					$pdo->close();
 					
-				   ?>
+// End here				   ?> -->
 
 	        	</div>
 	        	<div class="col-sm-3">
