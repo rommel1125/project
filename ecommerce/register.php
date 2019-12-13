@@ -17,7 +17,7 @@
 
 		if(!isset($_SESSION['captcha'])){
 			require('recaptcha/src/autoload.php');		
-			$recaptcha = new \ReCaptcha\ReCaptcha('6LevO1IUAAAAAFCCiOHERRXjh3VrHa5oywciMKcw', new \ReCaptcha\RequestMethod\SocketPost());
+			$recaptcha = new \ReCaptcha\ReCaptcha('6LfppccUAAAAAHWnfyfp89iez0etKCjqPGfWyhG9', new \ReCaptcha\RequestMethod\SocketPost());
 			$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 			if (!$resp->isSuccess()){
@@ -64,8 +64,7 @@
 						<p>Email: ".$email."</p>
 						<p>Password: ".$_POST['password']."</p>
 						<p>Please click the link below to activate your account.</p>
-						<a href='http://localhost/projectWEB/ecommerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
-					";//code=".$code."&user=".$userid."'
+						<a href='etechblue.com/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>";//code=".$code."&user=".$userid."'
 
 					//Load phpmailer
 		    		require 'vendor/autoload.php';

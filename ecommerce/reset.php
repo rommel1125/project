@@ -25,7 +25,7 @@
 					<p>Your Account:</p>
 					<p>Email: ".$email."</p>
 					<p>Please click the link below to reset your password.</p>
-					<a href='http://localhost/projectWEB/ecommerce/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
+					<a href='etechblue.com/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
 				";
 
 				//Load phpmailer
